@@ -17,6 +17,6 @@ Route::get('/', function () {
 
 
 
-Route::Resource('/products' , 'ProductController');
-Route::Resource('/reviews' , 'ReviewController');
-Route::Resource('/categories' , 'CategoryController');
+//Route::Resource('/products' , 'ProductController');
+//Route::Resource('/reviews' , 'ReviewController');
+//Route::Resource('/categories' , 'CategoryController');
