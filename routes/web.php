@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+Route::Resource('/products' , 'ProductController');
+Route::Resource('/reviews' , 'ReviewController');
+Route::Resource('/categories' , 'CategoryController');

@@ -20,6 +20,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::apiResource('/products' , 'ProductController');
 
+Route::apiResource('/reviews' , 'ReviewController');
+
+Route::apiResource('/categories' , 'CategoryController');
+
 Route::group(['prefix' => 'products'], function () {
 
     Route::apiResource('/{product}/reviews' , 'ReviewController');
