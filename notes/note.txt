@@ -37,4 +37,44 @@ C:\xampp\htdocs\Github\tuts\laravel\rest\laravel-api-ecomm-bitfumes>php artisan 
 
 
 
+C:\xampp\htdocs\Github\tuts\laravel\rest\laravel-api-ecomm-bitfumes>composer require laravel/passport
+Using version ^7.2 for laravel/passport
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Package operations: 15 installs, 0 updates, 0 removals
+  - Installing psr/http-message (1.0.1): Loading from cache
+  - Installing psr/http-factory (1.0.1): Downloading (100%)
+  - Installing zendframework/zend-diactoros (2.1.2): Downloading (100%)
+  - Installing symfony/psr-http-message-bridge (v1.2.0): Downloading (100%)
+  - Installing phpseclib/phpseclib (2.0.15): Downloading (100%)
+  - Installing defuse/php-encryption (v2.2.1): Downloading (100%)
+  - Installing lcobucci/jwt (3.2.5): Downloading (100%)
+  - Installing league/event (2.2.0): Downloading (100%)
+  - Installing league/oauth2-server (7.3.3): Downloading (100%)
+  - Installing ralouphie/getallheaders (2.0.5): Loading from cache
+  - Installing guzzlehttp/psr7 (1.5.2): Loading from cache
+  - Installing guzzlehttp/promises (v1.3.1): Loading from cache
+  - Installing guzzlehttp/guzzle (6.3.3): Loading from cache
+  - Installing firebase/php-jwt (v5.0.0): Downloading (100%)
+  - Installing laravel/passport (v7.2.2): Downloading (100%)
+symfony/psr-http-message-bridge suggests installing nyholm/psr7 (For a super lightweight PSR-7/17 implementation)
+phpseclib/phpseclib suggests installing ext-libsodium (SSH2/SFTP can make use of some algorithms provided by the libsodium-php extension.)
+phpseclib/phpseclib suggests installing ext-mcrypt (Install the Mcrypt extension in order to speed up a few other cryptographic operations.)
+phpseclib/phpseclib suggests installing ext-gmp (Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.)
+lcobucci/jwt suggests installing mdanter/ecc (Required to use Elliptic Curves based algorithms.)
+Writing lock file
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+Discovered Package: beyondcode/laravel-dump-server
+Discovered Package: fideloper/proxy
+Discovered Package: laravel/passport
+Discovered Package: laravel/tinker
+Discovered Package: nesbot/carbon
+Discovered Package: nunomaduro/collision
+Package manifest generated successfully.
+
+
+
 
