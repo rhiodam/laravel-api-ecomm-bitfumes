@@ -1,0 +1,40 @@
+
+
+Route::Resource('/products' , 'ProductController');
+
+C:\xampp\htdocs\Github\tuts\laravel\rest\laravel-api-ecomm-bitfumes>php artisan route:list
++--------+-----------+-----------------------------+------------------+------------------------------------------------+--------------+
+| Domain | Method    | URI                         | Name             | Action                                         | Middleware   |
++--------+-----------+-----------------------------+------------------+------------------------------------------------+--------------+
+|        | GET|HEAD  | /                           |                  | Closure                                        | web          |
+|        | GET|HEAD  | api/products                | products.index   | App\Http\Controllers\ProductController@index   | api          |
+|        | POST      | api/products                | products.store   | App\Http\Controllers\ProductController@store   | api          |
+|        | GET|HEAD  | api/products/create         | products.create  | App\Http\Controllers\ProductController@create  | api          |
+|        | GET|HEAD  | api/products/{product}      | products.show    | App\Http\Controllers\ProductController@show    | api          |
+|        | PUT|PATCH | api/products/{product}      | products.update  | App\Http\Controllers\ProductController@update  | api          |
+|        | DELETE    | api/products/{product}      | products.destroy | App\Http\Controllers\ProductController@destroy | api          |
+|        | GET|HEAD  | api/products/{product}/edit | products.edit    | App\Http\Controllers\ProductController@edit    | api          |
+|        | GET|HEAD  | api/user                    |                  | Closure                                        | api,auth:api |
++--------+-----------+-----------------------------+------------------+------------------------------------------------+--------------+
+
+---------------------------------
+
+Route::apiResource('/products' , 'ProductController');
+
+
+C:\xampp\htdocs\Github\tuts\laravel\rest\laravel-api-ecomm-bitfumes>php artisan route:list
++--------+-----------+------------------------+------------------+------------------------------------------------+--------------+
+| Domain | Method    | URI                    | Name             | Action                                         | Middleware   |
++--------+-----------+------------------------+------------------+------------------------------------------------+--------------+
+|        | GET|HEAD  | /                      |                  | Closure                                        | web          |
+|        | GET|HEAD  | api/products           | products.index   | App\Http\Controllers\ProductController@index   | api          |
+|        | POST      | api/products           | products.store   | App\Http\Controllers\ProductController@store   | api          |
+|        | GET|HEAD  | api/products/{product} | products.show    | App\Http\Controllers\ProductController@show    | api          |
+|        | PUT|PATCH | api/products/{product} | products.update  | App\Http\Controllers\ProductController@update  | api          |
+|        | DELETE    | api/products/{product} | products.destroy | App\Http\Controllers\ProductController@destroy | api          |
+|        | GET|HEAD  | api/user               |                  | Closure                                        | api,auth:api |
++--------+-----------+------------------------+------------------+------------------------------------------------+--------------+
+
+
+
+
